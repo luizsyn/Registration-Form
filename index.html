@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Formulir Pendaftaran Siswa</title>
+<link rel="stylesheet" href="sum 5.css">
+</head>
+<body>
+<div class="kotak">
+    <h1>Formulir Pendaftaran Siswa</h1>
+    <p class="subtitle">Isi data dengan lengkap & benar</p>
+
+    <label>Nama Lengkap *</label>
+    <input type="text" id="nama" placeholder="Contoh:Muhammad Raihan">
+    <p class="ket">Nama sesuai identitas</p>
+
+    <label>Kelas *</label>
+    <input type="text" id="kelas" placeholder="Contoh: XII IPA 2">
+    <p class="ket">Masukkan kelas Anda saat ini</p>
+
+        <label>Pilih Ekstrakurikuler (3 pilihan)</label>
+        <div class="opsi">
+            <label><input type="checkbox" name="ekskul" value="Basket"> Basket</label>
+            <label><input type="checkbox" name="ekskul" value="Futsal"> Futsal</label>
+            <label><input type="checkbox" name="ekskul" value="Paduan Suara"> Paduan Suara</label>
+        </div>
+        <p class="ket">Boleh memilih lebih dari 1 opsi (opsional)</p>
+
+        <label>Pilih Jadwal Belajar *</label>
+        <p class="ket">Wajib pilih salah satu</p>
+        <div class="opsi">
+            <label><input type="radio" name="jadwal" value="Pagi (07.00 - 12.00)"> Pagi (07.00 - 12.00)</label>
+            <label><input type="radio" name="jadwal" value="Siang (12.00 - 15.00)"> Siang (12.00 - 15.00)</label>
+            <label><input type="radio" name="jadwal" value="Sore (15.00 - 18.00)"> Sore (15.00 - 18.00)</label>
+            <label><input type="radio" name="jadwal" value="Campuran (07.00 - 18.00)"> Campuran (07.00 - 18.00)</label>
+        </div>
+
+        <button id="daftar">Daftar Sekarang</button>
+        <button id="reset">Reset Form</button>
+
+        <div class="kotak2" id="hasil"></div>
+    </div>
+    <script src="sum 5.js"></script>
+</body>
+</html>
